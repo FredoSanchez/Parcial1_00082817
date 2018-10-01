@@ -1,5 +1,28 @@
 :root{
     box-sizing: border-box;
+    --negro: #000;
+    --blanco: #ffffff;
+    --color1:#f5f5f5;
+    --orange: orange;
+    --blue: blue;
+    --color4:#dbdada;
+    --color5:#612e1d;
+    --color6:#13131342;
+    --color7:#440d5a;
+    --color8:#fef6f4;
+    --color9:rgba(245, 245, 245, 0.335);
+    --color10:rgba(109, 104, 104, 0.801);
+    
+
+
+
+
+
+
+
+
+
+
 }
 
 *, ::before, ::after {
@@ -12,3 +35,108 @@ nav {
     width: 100%;
     height: 50px;
 }
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    background-color: var(--negro);
+    position: relative;
+    height: 100%;
+}
+
+nav ul li a{
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+nav ul li a #logo {
+    height: 100px;
+    width: 100px;
+    background: var(--negro);
+    position: absolute;
+    top: 5px;
+    padding: 0 10px;
+}
+
+ul #logo img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-image: url(img/concierto.jpg);
+    height: 40em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {  
+    
+    font-family: 'Monoton', cursive;
+    font-size: 5em;
+}
+
+header p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.5em;
+}
+
+header i{
+    font-size: 4em;
+}
+
+
+section{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 0.5em;
+    background-color: var(--color4);
+}
+.piece {
+
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    gap: 1em;
+    align-items: center;
+    background-color: var(--blanco);
+    border-radius: 3%;
+
+}
+
+.piece div{
+    margin: 0.5em;
+}
+
+.piece div h3, .piece div p{
+    margin: 0.8em;
+}
+.piece img {
+    width: 100%;
+    height: 30em;
+    border-radius: 3%;
+}
+
+.piece .texto {
+    height: 10em;
+}
+
+.piece input{
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    font-size: 0.9em;
+    background-color: orange;
+    width: 90%;
+    margin-bottom: 1em;
+}
+ 
