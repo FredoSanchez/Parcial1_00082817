@@ -139,4 +139,13 @@ section{
     width: 90%;
     margin-bottom: 1em;
 }
- 
+
+aside {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
